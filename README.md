@@ -33,4 +33,17 @@ jika textbox17(uang yang kita bayar) lebih besar dari total bayar(textbox16), ma
 jika uang kita kurang/ lebih kecil dari total bayar, maka tidak akan ada aksi yang dilakukan
 ![image](https://user-images.githubusercontent.com/68774737/163663663-640c5a7c-4220-4e8d-b151-539cd3ed485b.png)
 
-terimakasih, aku mau tidur dlu
+# Clone ?
+gitclone aja di visual studio, kalau untuk 2019
+
+![image](https://user-images.githubusercontent.com/68774737/163663837-3f227e1f-adf4-4af7-9c1c-ba9ca1f4045d.png)
+
+tekan, lalu masukkan link github ini
+
+https://github.com/hoowwshii/cringecafe
+
+Setelah itu, buka solution explorer(kalau tidak tahu, bs cari di gugel), lalu cari file yang belakangnya .sln, lalu buka form1.vb. Selamat anda sudah clone 1 project/solution.
+
+gitclone untuk versi 2017 saya kurang tau, harusnya ada, mungkin bisa cari di google saja.
+
+eksplor code nya agar makin paham dan ingat, jangan hafal tapi pahami. kalau ga paham panggil pengawas ja pas ujiannya
