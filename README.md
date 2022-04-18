@@ -33,6 +33,11 @@ jika textbox17(uang yang kita bayar) lebih besar dari total bayar(textbox16), ma
 jika uang kita kurang/ lebih kecil dari total bayar, maka tidak akan ada aksi yang dilakukan
 ![image](https://user-images.githubusercontent.com/68774737/163663663-640c5a7c-4220-4e8d-b151-539cd3ed485b.png)
  
+ # textbox17_textchanged(alternatif pembayaran)
+ 
+ ![image](https://user-images.githubusercontent.com/68774737/163774074-a660d6a1-1d56-4ce0-b48e-1a03f511dae7.png)
+
+hampir sama, cuma untuk messagebox.show pada saat total bayar > uang kita harus diganti/disesuaikan dengan yang kamu mau. tergantung mau pakai yang mana, pilih sesuai kepercayaanmu
 # login
 
 ![image](https://user-images.githubusercontent.com/68774737/163765966-90530ad6-61d3-492a-92d0-2fba2ba2544d.png)
