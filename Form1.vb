@@ -84,6 +84,16 @@
         End If
     End Sub
 
+    Private Sub TextBox17_TextChanged(sender As Object, e As EventArgs) Handles TextBox17.TextChanged
+        If TextBox17.Text > TextBox16.Text Then
+            TextBox18.Text = Val(TextBox17.Text) - Val(TextBox16.Text)
+        ElseIf TextBox17.Text < TextBox16.Text Then
+            TextBox18.Text = Val(TextBox17.Text) - Val(TextBox16.Text)
+        ElseIf TextBox17.Text = TextBox16.Text Then
+            TextBox18.Text = 0
+        End If
+    End Sub
+
     Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
         If CheckBox5.Checked = True Then
             TextBox11.Text = TextBox8.Text * 5000
