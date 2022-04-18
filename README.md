@@ -15,7 +15,7 @@ akan mengubah textbox4.text / textbox yang sejajar / textbox yang sseharusnya / 
 ![image](https://user-images.githubusercontent.com/68774737/163663404-dcca75fb-2caa-408e-9bf6-7e364eff7157.png)
 dari kiri ke kanan. checkbox1, textbox1 dan textbox4
 
-# button2_click(sistem dikon)
+# button2_click(sistem diskon)
 ![image](https://user-images.githubusercontent.com/68774737/163663486-8f411293-4bf1-44d2-a045-fee5883e3551.png)
 untuk lebih mudah, aku pakai select case. jika textbox14(lol) nilainya kurang dari 20ribu, maka tidak ada diskon. jika 20ribu sampai dengan 50ribu, maka akan ada diskon sebesar 0.05(5%). begitu juga dengan 50ribu sampai 120ribu dan belanja yang lebih dari 120000
 
@@ -32,6 +32,16 @@ di dalam textbox16(total bayar/uang yang harus kita bayar), kita harus kurangkan
 jika textbox17(uang yang kita bayar) lebih besar dari total bayar(textbox16), maka uang kita akan dikurang dengan total bayar, lalu akan ditaruh ke bagian kembalian(textbox18)
 jika uang kita kurang/ lebih kecil dari total bayar, maka tidak akan ada aksi yang dilakukan
 ![image](https://user-images.githubusercontent.com/68774737/163663663-640c5a7c-4220-4e8d-b151-539cd3ed485b.png)
+ 
+# login
+
+![image](https://user-images.githubusercontent.com/68774737/163765966-90530ad6-61d3-492a-92d0-2fba2ba2544d.png)
+
+kotak/textbox untuk nama = textbox1, password = textbox2
+![image](https://user-images.githubusercontent.com/68774737/163766173-02a50cdc-418d-4884-84a5-97ab466d3026.png)
+
+Jika textbox1.text sama dengan username DAN texttbox2.text = pw, maka form1 baru akan dimunculkan, jika tidak sama, maka akan keluar messagebox seperti diatas
+
 
 # Clone ?
 gitclone aja di visual studio, kalau untuk 2019
