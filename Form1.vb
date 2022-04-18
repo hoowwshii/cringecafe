@@ -23,6 +23,7 @@
         If CheckBox6.Checked = True Then
             TextBox13.Text = Val(TextBox13.Text) + Val(TextBox12.Text) '* 500000
         End If
+        'total.text itu textbox untuk total harga makanan, textbox13.text adalah total harga minuman dan textbox14.text adalah total semua belanjaan kita, makanan dan minuman
         TextBox14.Text = Val(TextBox13.Text) + Val(total.Text)
     End Sub
 
