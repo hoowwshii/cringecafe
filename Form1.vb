@@ -1,34 +1,48 @@
 ﻿Public Class Form1
     Dim nasigoreng, okana, okanaspesial As Integer '= 10000,20000,500000
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        total.Text = ""
-        TextBox13.Text = ""
+        Dim sum As Double = 0
+        For Each textbox In Panel1.Controls.OfType(Of TextBox)()
+
+            sum += CDbl(textbox.Text)
+        Next
+        Dim sumx As Double
+
+        For Each minuman In Panel2.Controls.OfType(Of TextBox)()
+            sumx += CDbl(minuman.Text)
+        Next
+        total.Text = sum
+        TextBox13.Text = sumx
         TextBox14.Text = ""
         'total.Text = Val(TextBox4.Text) + Val(TextBox5.Text) + Val(TextBox6.Text)
-        If CheckBox1.Checked = True Then
-            total.Text = Val(total.Text) + Val(TextBox4.Text)
-        End If
-        If CheckBox2.Checked = True Then
-            total.Text = Val(total.Text) + Val(TextBox5.Text) '* 10000
-        End If
-        If CheckBox3.Checked = True Then
-            total.Text = Val(total.Text) + Val(TextBox6.Text) '* 500000
-        End If
-        If CheckBox4.Checked = True Then
-            TextBox13.Text = Val(TextBox13.Text) + Val(TextBox10.Text) '* 500000
-        End If
-        If CheckBox5.Checked = True Then
-            TextBox13.Text = Val(TextBox13.Text) + Val(TextBox11.Text) '* 500000
-        End If
-        If CheckBox6.Checked = True Then
-            TextBox13.Text = Val(TextBox13.Text) + Val(TextBox12.Text) '* 500000
-        End If
-        'total.text itu textbox untuk total harga makanan, textbox13.text adalah total harga minuman dan textbox14.text adalah total semua belanjaan kita, makanan dan minuman
+        'If CheckBox1.Checked = True Then
+        ' total.Text = Val(total.Text) + Val(TextBox4.Text)
+        '  End If
+        '  If CheckBox2.Checked = True Then
+        '   total.Text = Val(total.Text) + Val(TextBox5.Text) '* 10000
+        '  End If
+        '  If CheckBox3.Checked = True Then
+        '  total.Text = Val(total.Text) + Val(TextBox6.Text) '* 500000
+        '  End If
+        '   If CheckBox4.Checked = True Then
+        '   TextBox13.Text = Val(TextBox13.Text) + Val(TextBox10.Text) '* 500000
+        '    End If
+        '    If CheckBox5.Checked = True Then
+        '    TextBox13.Text = Val(TextBox13.Text) + Val(TextBox11.Text) '* 500000
+        '    End If
+        '    If CheckBox6.Checked = True Then
+        '   TextBox13.Text = Val(TextBox13.Text) + Val(TextBox12.Text) '* 500000
+        '    End If
+        '   'total.text itu textbox untuk total harga makanan, textbox13.text adalah total harga minuman dan textbox14.text adalah total semua belanjaan kita, makanan dan minuman
         TextBox14.Text = Val(TextBox13.Text) + Val(total.Text)
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-        If CheckBox1.Checked = True Then
+        If TextBox1.Text = "" Then
+            TextBox1.Text = ""
+        Else
+
+            CheckBox1.Checked = True
             TextBox4.Text = TextBox1.Text * 20000
         End If
     End Sub
@@ -94,8 +108,34 @@
         End If
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        For Each textbox In GroupBox1.Controls.OfType(Of TextBox)
+            textbox.Clear()
+        Next
+        For Each Textminum In GroupBox2.Controls.OfType(Of TextBox)
+            Textminum.Clear()
+        Next
+        For Each check1 In GroupBox1.Controls.OfType(Of CheckBox)
+            check1.Checked = False
+        Next
+        For Each check2 In GroupBox2.Controls.OfType(Of CheckBox)
+            check2.Checked = False
+        Next
+        For Each box In Panel1.Controls.OfType(Of TextBox)
+            box.Clear()
+        Next
+        For Each boxes In Panel2.Controls.OfType(Of TextBox)
+            boxes.Clear()
+        Next
+
+
+    End Sub
+
     Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
-        If CheckBox5.Checked = True Then
+        If TextBox8.Text = "" Then
+            TextBox11.Text = 0
+        Else
+            CheckBox5.Checked = True
             TextBox11.Text = TextBox8.Text * 5000
         End If
     End Sub

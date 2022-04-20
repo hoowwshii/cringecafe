@@ -63,17 +63,20 @@ Partial Class Form1
         Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Panel1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.total)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
@@ -82,7 +85,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.CheckBox3)
         Me.GroupBox1.Controls.Add(Me.CheckBox2)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 36)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 27)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(512, 260)
         Me.GroupBox1.TabIndex = 0
@@ -107,24 +110,27 @@ Partial Class Form1
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(371, 100)
+        Me.TextBox6.Location = New System.Drawing.Point(17, 83)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(100, 22)
         Me.TextBox6.TabIndex = 10
+        Me.TextBox6.Text = "0"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(377, 49)
+        Me.TextBox5.Location = New System.Drawing.Point(23, 32)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 22)
         Me.TextBox5.TabIndex = 9
+        Me.TextBox5.Text = "0"
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(377, 21)
+        Me.TextBox4.Location = New System.Drawing.Point(23, 4)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 22)
         Me.TextBox4.TabIndex = 8
+        Me.TextBox4.Text = "0"
         '
         'TextBox3
         '
@@ -236,14 +242,12 @@ Partial Class Form1
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Panel2)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.CheckBox4)
         Me.GroupBox2.Controls.Add(Me.TextBox13)
         Me.GroupBox2.Controls.Add(Me.CheckBox6)
-        Me.GroupBox2.Controls.Add(Me.TextBox12)
         Me.GroupBox2.Controls.Add(Me.CheckBox5)
-        Me.GroupBox2.Controls.Add(Me.TextBox11)
-        Me.GroupBox2.Controls.Add(Me.TextBox10)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.TextBox9)
         Me.GroupBox2.Controls.Add(Me.Label5)
@@ -274,21 +278,21 @@ Partial Class Form1
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(237, 100)
+        Me.TextBox12.Location = New System.Drawing.Point(27, 94)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(100, 22)
         Me.TextBox12.TabIndex = 10
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(243, 49)
+        Me.TextBox11.Location = New System.Drawing.Point(27, 42)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(100, 22)
         Me.TextBox11.TabIndex = 9
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(243, 21)
+        Me.TextBox10.Location = New System.Drawing.Point(27, 3)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(100, 22)
         Me.TextBox10.TabIndex = 8
@@ -430,11 +434,41 @@ Partial Class Form1
         Me.Button3.Text = "bayar"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.TextBox4)
+        Me.Panel1.Controls.Add(Me.TextBox5)
+        Me.Panel1.Controls.Add(Me.TextBox6)
+        Me.Panel1.Location = New System.Drawing.Point(363, 21)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(143, 134)
+        Me.Panel1.TabIndex = 13
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.TextBox10)
+        Me.Panel2.Controls.Add(Me.TextBox11)
+        Me.Panel2.Controls.Add(Me.TextBox12)
+        Me.Panel2.Location = New System.Drawing.Point(193, 20)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(136, 140)
+        Me.Panel2.TabIndex = 21
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(81, 407)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 21
+        Me.Button4.Text = "clear"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1654, 1055)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox18)
@@ -456,6 +490,10 @@ Partial Class Form1
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -502,4 +540,7 @@ Partial Class Form1
     Friend WithEvents TextBox18 As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Button4 As Button
 End Class
