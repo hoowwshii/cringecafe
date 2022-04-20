@@ -23,11 +23,12 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.total = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -41,11 +42,12 @@ Partial Class Form1
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -63,12 +65,10 @@ Partial Class Form1
         Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -92,6 +92,40 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "makanan"
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.TextBox4)
+        Me.Panel1.Controls.Add(Me.TextBox5)
+        Me.Panel1.Controls.Add(Me.TextBox6)
+        Me.Panel1.Location = New System.Drawing.Point(363, 21)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(143, 134)
+        Me.Panel1.TabIndex = 13
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(23, 4)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox4.TabIndex = 8
+        Me.TextBox4.Text = "0"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(23, 32)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox5.TabIndex = 9
+        Me.TextBox5.Text = "0"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(17, 83)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox6.TabIndex = 10
+        Me.TextBox6.Text = "0"
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -107,30 +141,6 @@ Partial Class Form1
         Me.total.Name = "total"
         Me.total.Size = New System.Drawing.Size(100, 22)
         Me.total.TabIndex = 11
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(17, 83)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox6.TabIndex = 10
-        Me.TextBox6.Text = "0"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(23, 32)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox5.TabIndex = 9
-        Me.TextBox5.Text = "0"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(23, 4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox4.TabIndex = 8
-        Me.TextBox4.Text = "0"
         '
         'TextBox3
         '
@@ -260,6 +270,40 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "minuman"
         '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.TextBox10)
+        Me.Panel2.Controls.Add(Me.TextBox11)
+        Me.Panel2.Controls.Add(Me.TextBox12)
+        Me.Panel2.Location = New System.Drawing.Point(193, 20)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(136, 140)
+        Me.Panel2.TabIndex = 21
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(27, 3)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox10.TabIndex = 8
+        Me.TextBox10.Text = "0"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(27, 42)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox11.TabIndex = 9
+        Me.TextBox11.Text = "0"
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(27, 94)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox12.TabIndex = 10
+        Me.TextBox12.Text = "0"
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -275,27 +319,6 @@ Partial Class Form1
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(100, 22)
         Me.TextBox13.TabIndex = 11
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(27, 94)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox12.TabIndex = 10
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(27, 42)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox11.TabIndex = 9
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(27, 3)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox10.TabIndex = 8
         '
         'Label4
         '
@@ -434,26 +457,6 @@ Partial Class Form1
         Me.Button3.Text = "bayar"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.TextBox4)
-        Me.Panel1.Controls.Add(Me.TextBox5)
-        Me.Panel1.Controls.Add(Me.TextBox6)
-        Me.Panel1.Location = New System.Drawing.Point(363, 21)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(143, 134)
-        Me.Panel1.TabIndex = 13
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.TextBox10)
-        Me.Panel2.Controls.Add(Me.TextBox11)
-        Me.Panel2.Controls.Add(Me.TextBox12)
-        Me.Panel2.Location = New System.Drawing.Point(193, 20)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(136, 140)
-        Me.Panel2.TabIndex = 21
-        '
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(81, 407)
@@ -488,10 +491,10 @@ Partial Class Form1
         Me.Text = "mam"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
